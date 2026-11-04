@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="flip — Berlin Indie Animation Festival">
+  <title>Submissions — flip</title>
+  <link rel="icon" type="image/png" href="pics/flip%20logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="flip — home">
+      <h1 class="brand-name">flip</h1>
+      <br>
+      <p class="brand-subtitle">Berlin Indie Animation Festival</p>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="screenings.html">Screenings</a>
+      <a href="about.html">About</a>
+      <a href="submissions.html" aria-current="page">Submissions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="page-title">Submissions</h2>
+
+    <div class="submission-intro">
+      <p><h4>open call: rolling submissions</h4></p>
+      <p>flip has no deadlines, no submission fees, and no gatekeeping. We curate ongoing programmes across Berlin’s independent cinema screens as dates and venues confirm.</p>
+      <p>Whether your work is freshly rendered, scribbled on loose paper, or pulled from a dusty hard drive, send us a link. If selected for an upcoming screening, we’ll reach out to request a high-res projection file.</p>
+    </div>
+
+    <div class="submission-form">
+      <iframe data-tally-src="https://tally.so/embed/1WX494?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1522" frameborder="0" marginheight="0" marginwidth="0" title="Submit your work"></iframe>
+    </div>
+  </main>
+
+  <script>
+    var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function() {
+          if (typeof Tally !== "undefined") {
+            Tally.loadEmbeds();
+          } else {
+            d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+              e.src = e.dataset.tallySrc;
+            });
+          }
+        };
+
+    if (typeof Tally !== "undefined") {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    }
+  </script>
+
+  <footer class="site-footer">
+    <div class="site-footer-main">flip — Berlin Indie Animation Festival</div>
+    <div class="legal-links">
+      <a href="impressum.html">Impressum</a>
+      <span>•</span>
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </div>
+  </footer>
+</body>
+</html>
